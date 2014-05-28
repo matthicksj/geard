@@ -17,7 +17,7 @@ func TestExtractVariablesFrom_NoAppend(t *testing.T) {
 
 	env := EnvironmentDescription{}
 
-	if err := env.ExtractVariablesFrom(args, false); err != nil {
+	if err := env.ExtractVariablesFrom(&args, false); err != nil {
 		t.Error("Unexpected error parsing arguments")
 	}
 
